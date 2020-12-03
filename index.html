@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talk Banana</title>
+    <title>Talk Ubbi Dubbi</title>
     <meta name="author" content="Ankita Bagale">
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,33 +13,38 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>  
-    <nav class="nav container"></nav>
-            
-    <section class="section textCenter">
-        <h1>talk ubbi dubbi</h1>
 
-        <textarea id="userInput" placeholder="Enter your text here and we will convert into Ubbi Dubbi"></textarea>
-        <button id="translateBtn">Translate</button>
+    <div class="bg-image"><img id="bg" src="/Images/big-bang-theory-bazinga.jpg" alt="bg-image">
+    </div>
+    <div class="place-over-bg">
+        <header class="container text-center">
+            <h1>Talk Ubbi Dubbi</h1>
+            <p>A secret language for friends. Ubbi dubbi works by adding -ub- before each vowel sound in a syllable. It was used between Penny and Amy in The Big Bang Theory TV seies as a means of having a secret conversation. Check this app to talk secretly with your friends.</p>
+        </header>
+                
+        <section class="text-center container">
+            <textarea class="box" id="userInput" placeholder="Enter your text here and we will convert into Ubbi Dubbi"></textarea>
+            <button id="translateBtn">Translate</button>
 
-        <h3>translated output is shown below</h3>
-        <div class="textLeft" id="output">
-        </div>
-    </section>
+            <h3>translated output is shown below</h3>
+            <div class="textLeft box" id="output"></div>
+        </section>
 
-    <footer class="container">
-        <div class="footer-header"></div>
-        <ul class="flex list non-bullet-list">
-            <li class="list-item-inline">
-                <a class="link" href="https://github.com/AnkitaBagale"><i class="fab fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://twitter.com/AnkitaB1108"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://www.linkedin.com/in/ankita-bagale1108"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-        </ul>
-    </footer>
+        <footer class="footer text-center container">
+            <div class="footer-header">Connect with me!</div>
+            <ul class="flex list non-bullet-list">
+                <li class="list-item-inline">
+                    <a class="link" href="https://github.com/AnkitaBagale"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="https://twitter.com/AnkitaB1108"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="https://www.linkedin.com/in/ankita-bagale1108"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div> 
         
 
     <script src="app.js"></script>
