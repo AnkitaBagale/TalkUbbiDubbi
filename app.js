@@ -5,19 +5,19 @@ var serverUrl="https://api.funtranslations.com/translate/ubbi-dubbi.json";
 
 
 //adjust height of background image
-//adding footer to bottom if screen height is smaller than content height;
+//fixing footer to bottom if screen height is bigger than content height;
 var contentHeight= document.querySelector('.place-over-bg').clientHeight;
 var minHeight = screen.height;
 var footer =document.querySelector('.footer');
 var img = document.querySelector('#bg');
 
-if(minHeight > contentHeight){
-    contentHeight = minHeight;
-    footer.classList.add('bottom0');
-}
-img.style.height = contentHeight+"px";
-
-
+window.addEventListener('load', () => {
+    if(minHeight > contentHeight){
+        contentHeight = minHeight;
+        footer.classList.add('bottom0');
+    }
+    img.style.height = contentHeight+"px";
+  });
 
 //to add query parameter and key in api url
 function createUrl(text){

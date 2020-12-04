@@ -1,17 +1,13 @@
 
-:root{
-    --primary: #F59E0B;
-    --secondary:#D97706;
-
-}
 
 *{
     box-sizing: border-box;
+    font-family: 'Kalam', cursive;
 }
 body{
     margin: 0;
-    font-family: 'Kalam', cursive;
 }
+
 /* to apply bg a image with opacity 50% */
 .bg-image{
     overflow-x: hidden;
@@ -21,7 +17,6 @@ body{
     object-fit: cover;
     opacity: 0.5;
 }
-
 
 .place-over-bg{
     position: absolute;
@@ -40,16 +35,17 @@ body{
     background-color: rgb(255, 255, 255, 0.8);
     padding: 1rem;
     font-size: 1rem;
-    font-family: 'Kalam', cursive;
 }
+
 #output{
     overflow-y:scroll;
+    font-size: 1rem;
 }
 
 #output::-webkit-scrollbar {
     background: transparent; 
   }
-  
+
 
 .container{
     width:100%;
@@ -62,10 +58,10 @@ body{
 
 #translateBtn{
     border: none;
+    border: 2px solid black;
     border-radius: 25px;
     padding: 0.6rem 2rem 0.4rem;
     margin: 0.5rem;
-    font-family: 'Kalam', cursive;
     cursor: pointer;
 }
 
@@ -110,7 +106,7 @@ ul{
 
 i.fab::before {
     font-size: 2rem;
-
+    color:black;
 }
 
 .non-bullet-list{
